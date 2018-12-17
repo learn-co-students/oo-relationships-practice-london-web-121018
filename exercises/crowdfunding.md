@@ -8,13 +8,6 @@ You are building the next big crowdfunding site. Users can make projects and fun
 
 Write out the relationships using has_many, belongs_to and has_many_through. Write out a schema that shows what these tables might look like in a database. Where would the foreign keys live? Then *build out methods reflecting all these relationships.* What method can I call on a user to find other users who have backed his/her projects, etc?
 
-#### User
-- .highest_pledge
-  - returns the user who has made the highest pledge
-- .multi_pledger
-  - returns all users who have pledged to multiple projects
-- .project_creator
-  - returns all users who have created a project
 
 #### Project
 - .no_pledges
@@ -23,9 +16,3 @@ Write out the relationships using has_many, belongs_to and has_many_through. Wri
   - returns all projects which have met or exceeded their pledge goal
 - .most_backers
   - returns the project with the highest number of backers
-
-#### Pledge
-- #project
-  - returns the project associated with a particular pledge
-- #user
-  - returns the user associated with a particular pledge

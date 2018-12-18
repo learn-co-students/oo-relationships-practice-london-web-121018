@@ -1,0 +1,108 @@
+AIRBNB
+
+mani = Guests.new("Mani")
+deji = Guests.new("Deji")
+
+ny = Listings.new("ny")
+la = Listings.new("la")
+ln = Listings.new("London")
+
+trip1 = Trips.new(mani, la)
+trip2 = Trips.new(mani, ny)
+trip3 = Trips.new(deji, ln)
+trip4 = Trips.new(deji, la)
+trip5 = Trips.new(mani, la)
+
+BAKERY
+
+
+shezan = Bakeries.new("shezan")
+mimi = Bakeries.new("mimi")
+
+
+brownies = Desserts.new("brownies")
+creams = Desserts.new("creams")
+fudge = Desserts.new("fudge")
+
+
+shezan.desserts = [brownies, creams]
+mimi.desserts = [fudge, brownies, creams]
+
+
+chocolate = Ingredients.new("c", 10)
+cream = Ingredients.new("cc", 25)
+berry = Ingredients.new("b", 5)
+chocolate_mousse = Ingredients.new("cm", 40)
+banana_cream = Ingredients.new("bc", 50)
+sugar = Ingredients.new("s", 80)
+
+
+brownies.ingredients = [chocolate, sugar, chocolate_mousse]
+creams.ingredients = [chocolate, sugar, cream, banana_cream]
+fudge.ingredients =  [chocolate, sugar, berry]
+
+
+LYFT
+
+mani = Passenger.new("Mani")
+deji = Passenger.new("Deji")
+
+
+dan = Driver.new("dan")
+gabe= Driver.new("gabe")
+alice = Driver.new("alice")
+
+
+ride1 = Ride.new(mani ,dan  ,10  )
+ride2 = Ride.new(deji  , gabe ,50  )
+ride3 = Ride.new(deji  ,alice  , 60 )
+ride4 = Ride.new(mani  ,alice  , 80 )
+
+IMDB
+
+mani = Actor.new("Mani")
+deji = Actor.new("Deji")
+
+
+lotr = Movie.new("lotr")
+sp = Movie.new("sp")
+hp = Movie.new("hp")
+
+bb = Show.new("bb")
+rm = Show.new("rm")
+lotrs = Show.new("lotr show")
+
+harry = Character.new("harry", mani, hp, nil)
+ron  = Character.new("ron", deji, hp, nil)
+gimli = Character.new("gimli",mani, lotr, lotrs)
+walt = Character.new("walt",mani, nil, bb)
+stan = Character.new("stan",deji, nil, sp)
+
+
+GYM
+
+mani  = Client.new("mani")
+deji  = Client.new("deji")
+ander = Client.new("ander")
+elaine = Client.new("elaine")
+
+dan = Trainer.new("dan")
+gabe = Trainer.new("gabe")
+
+l1 = Location.new("Lahore")
+l2 = Location.new("London")
+l3 = Location.new("Manchester")
+l4 = Location.new("Anderson's crib")
+
+gym1 = Gym.new(dan, l4)
+gym2 = Gym.new(dan, l3)
+gym3 = Gym.new(gabe, l1)
+gym4 = Gym.new(gabe, l3)
+gym5 = Gym.new(dan,l1)
+gym6  = Gym.new(gabe, l4 )
+gym7  = Gym.new(dan, l2 )
+
+mani.assign_trainer(dan)
+deji.assign_trainer( gabe )
+ander.assign_trainer( gabe)
+elaine.assign_trainer(gabe )
